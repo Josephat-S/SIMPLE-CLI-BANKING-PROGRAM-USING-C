@@ -44,7 +44,7 @@ int main(){
 	bool is_running = true;
 	// Message for menu
 	while(is_running == true){
-	printf("MENU\n_______________\nPRESS 1 TO DISPLAY CUSTOMER INFORMATION\nPRESS 2 TO CHECK THE BALANCE\nPRESS 3 TO WITHDRAW\nPRESS 4 TO DEPOSIT\nPRESS 5 TO CONTINUE\nPRESS 6 TO EXIT\n");
+	printf("\n         MENU\n_______________\nPRESS 1 TO DISPLAY CUSTOMER INFORMATION\nPRESS 2 TO CHECK THE BALANCE\nPRESS 3 TO WITHDRAW\nPRESS 4 TO DEPOSIT\nPRESS 5 TO CONTINUE\nPRESS 6 TO EXIT\n");
 	// Variable for user input
 	int action;
 	scanf("%d", &action);
