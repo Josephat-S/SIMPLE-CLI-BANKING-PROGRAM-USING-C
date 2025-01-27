@@ -14,13 +14,13 @@ void DisplayInfo(){
 float Balance = 74500.5000;
 // Function for checking the balance
 float CheckBalance(float amount){
-	printf("The balance is %.4fFrw", amount);
+	printf("________________________________________     \nThe balance is %.4fFrw     |\n________________________________________  ", amount);
 }
 // Variable transaction ID
 int TID = 1;
 // Function for withdraw
 float Withdraw(float amount){
-	printf("You have withdrawn %.4fFrw \n", amount);
+	printf("________________________________________\nYou have withdrawn %.4fFrw \n", amount);
 	// for updating the balance
 	Balance = Balance - amount;
 	printf("Your new balance is %.4fFrw \n", Balance);
@@ -31,7 +31,7 @@ float Withdraw(float amount){
 }
 	
 float Deposit(float amount){
-	printf("You have deposited %.4fFrw \n", amount);
+	printf("________________________________________\nYou have deposited %.4fFrw \n", amount);
 	// for updating the balance
 	Balance += amount;
 	printf("Your new balance is %.4fFrw \n", Balance);
@@ -44,7 +44,7 @@ int main(){
 	bool is_running = true;
 	// Message for menu
 	while(is_running == true){
-	printf("MENU\n_______________\nPRESS 1 TO DISPLAY CUSTOMER INFORMATION\nPRESS 2 TO CHECK THE BALANCE\nPRESS 3 TO WITHDRAW\nPRESS 4 TO DEPOSIT\nPRESS 5 TO CONTINUE\nPRESS 6 TO EXIT\n");
+	printf("\n________________________________________\n          MENU\n________________________________________\nPRESS 1 TO DISPLAY CUSTOMER INFORMATION\nPRESS 2 TO CHECK THE BALANCE\nPRESS 3 TO WITHDRAW\nPRESS 4 TO DEPOSIT\nPRESS 5 TO CONTINUE\nPRESS 6 TO EXIT\n________________________________________\n");
 	// Variable for user input
 	int action;
 	scanf("%d", &action);
@@ -96,7 +96,7 @@ int main(){
 			}
 		break;
 		case 6:
-			printf("Bye, Thank you for using our system!");
+			printf("________________________________________\nBye, Thank you for using our system!\n________________________________________");
 			is_running = false;
 			exit(EXIT_SUCCESS);
 		break;
